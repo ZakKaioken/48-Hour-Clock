@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:_48_Hour_Clock"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="797*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="TimeText" Content="43:42" Grid.Column="1" Margin="10,10,10,10" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Montserrat" Loaded="Label_Loaded"/>
 
     </Grid>
 </Window>
